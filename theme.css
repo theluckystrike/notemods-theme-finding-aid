@@ -194,6 +194,8 @@ body a.external-link { color: var(--link-external-color); padding-inline-end: 16
 body :is(a.internal-link,a.external-link):hover { background-color: var(--tag-background); }
 /* List levels share one inset. Guides are omitted in both renderers. */
 body .markdown-rendered :is(ul,ol) { padding-inline-start: 0; }
+body .markdown-rendered ol { padding-inline-start: 0.95em; }
+body .markdown-rendered ol ol { padding-inline-start: 0; }
 body .markdown-rendered li { margin-block: var(--list-spacing); }
 body .markdown-source-view.mod-cm6 .HyperMD-list-line-2 > .cm-hmd-list-indent { width: calc(1 * var(--list-indent)); }
 body .markdown-source-view.mod-cm6 .HyperMD-list-line-3 > .cm-hmd-list-indent { width: calc(2 * var(--list-indent)); }
@@ -224,7 +226,7 @@ body .callout-content > :first-child { margin-top: 0.45em; }
 body .callout-content > :last-child { margin-bottom: 0; }
 body .callout[data-callout="quote"], body .callout[data-callout="cite"] { font-style: italic; }
 /* Ruled catalogue tables. Scrolling belongs to Reading view only. */
-body .markdown-rendered table { border-collapse: collapse; width: 100%; font-size: 0.94em; font-variant-numeric: tabular-nums; }
+body .markdown-rendered table { border-collapse: collapse; border-spacing: 0; width: 100%; font-size: 0.94em; font-variant-numeric: tabular-nums; }
 body .markdown-rendered :is(th,td) { border: none; border-inline: 0 none; border-bottom: 1px solid var(--table-border-color); box-shadow: none; padding: 0.42em 0.7em; text-align: start; }
 body .markdown-rendered thead tr > th:nth-child(n) { border-bottom: 2px solid var(--background-modifier-border); background: var(--table-header-background); font-family: var(--font-interface-theme); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.8em; color: var(--text-muted); }
 body .markdown-preview-view .table-wrapper { overflow-x: auto; overflow-y: hidden; }
@@ -247,8 +249,8 @@ body .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock::before { content:
 body .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin::before { top: 1px; }
 body .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end::before { bottom: 1px; }
 /* Quotes, tags, embeds and local images. */
-body .markdown-rendered blockquote { color: var(--text-muted); background: var(--background-secondary); border-inline-start: 2px solid var(--text-accent); padding-inline: 1em; margin-inline: 0; }
-body .markdown-source-view.mod-cm6 .HyperMD-quote:not(.HyperMD-callout) { background: var(--background-secondary); color: var(--text-muted); --blockquote-border-color: var(--text-accent); padding-inline-start: 1em; }
+body .markdown-rendered blockquote { color: var(--text-muted); background: var(--background-secondary); border-inline-start: 2px solid var(--text-accent); padding-inline: .625em; margin-inline: 0; }
+body .markdown-source-view.mod-cm6 .HyperMD-quote:not(.HyperMD-callout) { background: var(--background-secondary); color: var(--text-muted); --blockquote-border-color: var(--text-accent); }
 body a.tag, body .markdown-source-view.mod-cm6 .cm-hashtag { background: var(--tag-background); color: var(--tag-color); font-size: var(--tag-size); font-family: var(--font-interface-theme); text-transform: uppercase; letter-spacing: 0.04em; border-radius: var(--tag-radius); text-decoration-line: underline; }
 body a.tag { padding: 0.05em 0.45em; }
 body a.tag:hover { background: var(--tag-background-hover); }
@@ -306,8 +308,8 @@ body .markdown-rendered li.task-list-item:not(.is-checked):not([data-task="x"]) 
 }
 
 /* Type ink uses local RGB inputs. Native CSS color variables remain intact. */
-body.theme-light { --nm-callout-note-rgb: 46,91,140; --nm-callout-abstract-rgb: 40,105,102; --nm-callout-info-rgb: 37,96,125; --nm-callout-todo-rgb: 83,74,147; --nm-callout-tip-rgb: 58,103,66; --nm-callout-success-rgb: 42,107,76; --nm-callout-question-rgb: 119,72,128; --nm-callout-warning-rgb: 137,83,13; --nm-callout-failure-rgb: 151,50,59; --nm-callout-danger-rgb: 160,72,10; --nm-callout-bug-rgb: 139,57,109; --nm-callout-example-rgb: 100,69,147; --nm-callout-quote-rgb: 99,90,77; }
-body.theme-dark { --nm-callout-note-rgb: 148,185,229; --nm-callout-abstract-rgb: 128,198,184; --nm-callout-info-rgb: 133,202,220; --nm-callout-todo-rgb: 177,164,234; --nm-callout-tip-rgb: 174,204,140; --nm-callout-success-rgb: 137,204,158; --nm-callout-question-rgb: 210,164,219; --nm-callout-warning-rgb: 237,193,111; --nm-callout-failure-rgb: 237,153,164; --nm-callout-danger-rgb: 244,161,129; --nm-callout-bug-rgb: 230,140,150; --nm-callout-example-rgb: 160,170,240; --nm-callout-quote-rgb: 198,187,171; }
+body.theme-light { --nm-callout-note-rgb: 46,91,140; --nm-callout-abstract-rgb: 40,105,102; --nm-callout-info-rgb: 37,96,125; --nm-callout-todo-rgb: 83,74,147; --nm-callout-tip-rgb: 58,103,66; --nm-callout-success-rgb: 42,107,76; --nm-callout-question-rgb: 100,80,150; --nm-callout-warning-rgb: 137,83,13; --nm-callout-failure-rgb: 151,50,59; --nm-callout-danger-rgb: 160,72,10; --nm-callout-bug-rgb: 139,57,109; --nm-callout-example-rgb: 100,69,147; --nm-callout-quote-rgb: 99,90,77; }
+body.theme-dark { --nm-callout-note-rgb: 148,185,229; --nm-callout-abstract-rgb: 128,198,184; --nm-callout-info-rgb: 133,202,220; --nm-callout-todo-rgb: 177,164,234; --nm-callout-tip-rgb: 174,204,140; --nm-callout-success-rgb: 137,204,158; --nm-callout-question-rgb: 210,164,219; --nm-callout-warning-rgb: 237,193,111; --nm-callout-failure-rgb: 237,153,164; --nm-callout-danger-rgb: 244,161,129; --nm-callout-bug-rgb: 228,138,204; --nm-callout-example-rgb: 160,170,240; --nm-callout-quote-rgb: 198,187,171; }
 body .callout[data-callout="note"] { --callout-color: rgb(var(--nm-callout-note-rgb)); --fa-callout-ink: var(--callout-color); --fa-callout-surface: rgba(var(--nm-callout-note-rgb),0.06); }
 body .callout[data-callout="abstract"], body .callout[data-callout="summary"], body .callout[data-callout="tldr"] { --callout-color: rgb(var(--nm-callout-abstract-rgb)); --fa-callout-ink: var(--callout-color); --fa-callout-surface: rgba(var(--nm-callout-abstract-rgb),0.06); }
 body .callout[data-callout="info"] { --callout-color: rgb(var(--nm-callout-info-rgb)); --fa-callout-ink: var(--callout-color); --fa-callout-surface: rgba(var(--nm-callout-info-rgb),0.06); }
@@ -321,3 +323,11 @@ body .callout[data-callout="danger"], body .callout[data-callout="error"] { --ca
 body .callout[data-callout="bug"] { --callout-color: rgb(var(--nm-callout-bug-rgb)); --fa-callout-ink: var(--callout-color); --fa-callout-surface: rgba(var(--nm-callout-bug-rgb),0.06); }
 body .callout[data-callout="example"] { --callout-color: rgb(var(--nm-callout-example-rgb)); --fa-callout-ink: var(--callout-color); --fa-callout-surface: rgba(var(--nm-callout-example-rgb),0.06); }
 body .callout[data-callout="quote"], body .callout[data-callout="cite"] { --callout-color: rgb(var(--nm-callout-quote-rgb)); --fa-callout-ink: var(--callout-color); --fa-callout-surface: rgba(var(--nm-callout-quote-rgb),0.06); }
+
+/* Settings uses one catalogue ink ring for keyboard and direct focus. */
+body :is(.vertical-tab-content,.vertical-tab-header,.setting-item) :is(button,.dropdown,select,input,.checkbox-container):focus {
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: 1px;
+  box-shadow: none;
+}
+body .markdown-source-view.mod-cm6 .HyperMD-task-line input.task-list-item-checkbox { margin-inline-start: var(--checkbox-margin-inline-start); }
