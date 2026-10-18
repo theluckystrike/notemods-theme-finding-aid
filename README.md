@@ -2,7 +2,7 @@
 
 A light and dark Obsidian theme for archive inventories.
 Catalogue headings, inventory rules and square cards keep collection notes easy to scan.
-Callouts keep their type icons and colored edges. Warning uses a double edge.
+Callouts keep their type icons and colored edges. Warning uses a dashed edge.
 Keyboard controls have a focus ring. The editor uses a colored caret and an active-line rail.
 
 ## Screenshots
@@ -28,7 +28,8 @@ Keyboard controls have a focus ring. The editor uses a colored caret and an acti
 ## Compatibility
 
 Minimum Obsidian version: 1.4.0.
-The desktop renderer is tested with the G4 native Obsidian capture harness.
+Tested on Obsidian 1.14.4 desktop in Reading view and Live Preview.
+The declared minimum version has not been tested.
 The 420 px screenshots show a narrow desktop window.
 Mobile is not tested. Community-directory installation is not tested.
 
@@ -54,7 +55,10 @@ System fonts can differ between computers.
 Native Obsidian controls determine keyboard reachability.
 Automated contrast checks do not certify screen-reader access.
 Startup console events before the harness attaches are unknown.
-Independent design review is pending.
+Completed tasks use a check and muted text. Nested open tasks keep normal text.
+The theme preserves native callout icons. Empty icon placeholders use local SVG fallbacks. Unknown types use the default note icon.
+Custom callout icons depend on the icon that Obsidian or a snippet supplies.
+Embedded note bodies can be absent in the capture fixture. Embed body rendering is not verified.
 
 ## License
 

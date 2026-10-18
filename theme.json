@@ -4,10 +4,10 @@
   "useCase": "Archive and reference navigation: catalogue-style vaults where you navigate a described collection of documents, folders and box lists.",
   "distinctFeatures": [
     "Monospaced catalogue titles",
-    "Double section rules",
-    "Continuous inventory rails",
+    "Whole-pixel double section rules",
+    "Nested inventory levels",
     "Ruled catalogue tables",
-    "Type symbols on scope-note callouts"
+    "Native type icons on scope-note callouts"
   ],
   "modes": [
     "light",
@@ -39,9 +39,9 @@
   },
   "verification": {
     "status": "review pending",
-    "themeCssSha256": "94cfe704798dae85ec82b36f004cfebaa6d2be45fc9078132fb867ba84a90793",
+    "themeCssSha256": "d4d202d432e719e515b633eeacec167b90b8ccee4bfde4e91ade9e78d3327430",
     "visualReview": "pending",
     "releaseReady": false
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }

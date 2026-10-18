@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "theme": "Finding Aid",
-  "version": "1.0.2",
-  "themeCssSha256": "94cfe704798dae85ec82b36f004cfebaa6d2be45fc9078132fb867ba84a90793",
+  "version": "1.0.3",
+  "themeCssSha256": "d4d202d432e719e515b633eeacec167b90b8ccee4bfde4e91ade9e78d3327430",
   "status": "HOLD",
   "requiredScore": 95,
   "accepted": false,
   "currentArtifactsIndependentlyReviewed": false,
-  "historicalScore": 72,
-  "historicalReview": "/Users/mike/obsidian-theme-factory-2026-10-14/qa/quality95/reviews/finding-aid.json",
+  "historicalScore": 81,
+  "historicalReview": "/Users/mike/notemods-g4-work/review-notes/finding-aid.json",
   "note": "G4 repairs need an independent review of the current evidence. No current score is assigned.",
-  "evidenceDirectory": "/Users/mike/notemods-g4-work/evidence/finding-aid/94cfe704"
+  "evidenceDirectory": "/Users/mike/notemods-g4-work/evidence/finding-aid/d4d202d4"
 }
