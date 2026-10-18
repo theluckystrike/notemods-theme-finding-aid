@@ -30,6 +30,7 @@ Keyboard controls have a focus ring. The editor uses a colored caret and an acti
 Minimum Obsidian version: 1.4.0.
 Tested on Obsidian 1.14.4 desktop in Reading view and Live Preview.
 The declared minimum version has not been tested.
+Custom callout colors use the CSS-color API tested in 1.14.4. Earlier API support is unknown.
 The 420 px screenshots show a narrow desktop window.
 Mobile is not tested. Community-directory installation is not tested.
 
@@ -56,9 +57,9 @@ Native Obsidian controls determine keyboard reachability.
 Automated contrast checks do not certify screen-reader access.
 Startup console events before the harness attaches are unknown.
 Completed tasks use a check and muted text. Nested open tasks keep normal text.
-The theme preserves native callout icons. Empty icon placeholders use local SVG fallbacks. Unknown types use the default note icon.
+The theme keeps native callout icons. Reduced motion keeps embeds and icons available.
 Custom callout icons depend on the icon that Obsidian or a snippet supplies.
-Embedded note bodies can be absent in the capture fixture. Embed body rendering is not verified.
+
 
 ## License
 
