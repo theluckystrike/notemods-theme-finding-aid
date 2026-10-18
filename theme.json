@@ -1,0 +1,47 @@
+{
+  "slug": "finding-aid",
+  "family": "knowledge-systems",
+  "useCase": "Archive and reference navigation: catalogue-style vaults where you navigate a described collection of documents, folders and box lists.",
+  "distinctFeatures": [
+    "Monospaced catalogue titles",
+    "Double section rules",
+    "Continuous inventory rails",
+    "Ruled catalogue tables",
+    "Type symbols on scope-note callouts"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "contrastTokens": {
+    "normal": {
+      "light": "#2b2418",
+      "dark": "#ece3d2"
+    },
+    "link": {
+      "light": "#6b4a1f",
+      "dark": "#d6ad6b"
+    },
+    "uiFocus": {
+      "light": "#6b4a1f",
+      "dark": "#d6ad6b"
+    }
+  },
+  "backgrounds": {
+    "light": "#f5f0e6",
+    "dark": "#191612"
+  },
+  "fonts": {
+    "text": "\"Gill Sans\", \"Trebuchet MS\", \"Segoe UI\", system-ui, sans-serif",
+    "headings": "\"Courier New\", \"SFMono-Regular\", ui-monospace, monospace",
+    "interface": "\"Gill Sans\", \"Trebuchet MS\", \"Segoe UI\", system-ui, sans-serif",
+    "monospace": "\"Courier New\", \"SFMono-Regular\", ui-monospace, monospace"
+  },
+  "verification": {
+    "status": "review pending",
+    "themeCssSha256": "94cfe704798dae85ec82b36f004cfebaa6d2be45fc9078132fb867ba84a90793",
+    "visualReview": "pending",
+    "releaseReady": false
+  },
+  "version": "1.0.2"
+}

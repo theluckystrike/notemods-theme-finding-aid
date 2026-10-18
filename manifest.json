@@ -1,7 +1,8 @@
 {
   "name": "Finding Aid",
-  "author": "Knowledge Systems Factory (U20)",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minAppVersion": "1.4.0",
-  "authorUrl": "https://example.invalid/knowledge-systems-factory"
+  "author": "NoteMods",
+  "authorUrl": "https://notemods.com/themes/",
+  "fundingUrl": "https://github.com/sponsors/theluckystrike"
 }

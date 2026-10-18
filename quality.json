@@ -1,17 +1,14 @@
 {
   "schemaVersion": 1,
   "theme": "Finding Aid",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "themeCssSha256": "94cfe704798dae85ec82b36f004cfebaa6d2be45fc9078132fb867ba84a90793",
   "status": "HOLD",
-  "score": 72,
   "requiredScore": 95,
-  "reviewedAt": "2026-10-14T15:41:39",
-  "reviewer": "claude-orchestrator",
   "accepted": false,
-  "directoryApprovalClaimed": false,
-  "majorDefects": [],
-  "note": "The score records source version 1.0.0. Current 1.0.1 metadata and documentation have not received an independent review. Theme CSS is unchanged. The 95/100 acceptance gate remains unmet.",
-  "historicalReviewVersion": "1.0.0",
+  "currentArtifactsIndependentlyReviewed": false,
   "historicalScore": 72,
-  "currentArtifactsIndependentlyReviewed": false
+  "historicalReview": "/Users/mike/obsidian-theme-factory-2026-10-14/qa/quality95/reviews/finding-aid.json",
+  "note": "G4 repairs need an independent review of the current evidence. No current score is assigned.",
+  "evidenceDirectory": "/Users/mike/notemods-g4-work/evidence/finding-aid/94cfe704"
 }

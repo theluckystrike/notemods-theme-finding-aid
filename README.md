@@ -1,84 +1,61 @@
 # Finding Aid
 
-Catalogue layouts for your archive notes and collection guides.
-
-This is a preview theme with light and dark modes.
-
-## Preview status
-
-An independent review scored source version 1.0.0 72/100 on 14 October 2026.
-The NoteMods acceptance gate requires at least 95/100. This version remains on hold.
-Obsidian directory approval is not claimed.
-
-## Design
-
-- File tree accent rails.
-- Boxed metadata.
-- Inventory lists and scope callouts.
-
-These styles change presentation. They do not add application features or plugins.
+A light and dark Obsidian theme for archive inventories.
+Catalogue headings, inventory rules and square cards keep collection notes easy to scan.
+Callouts keep their type icons and colored edges. Warning uses a double edge.
+Keyboard controls have a focus ring. The editor uses a colored caret and an active-line rail.
 
 ## Screenshots
 
-These are unaltered captures from Obsidian 1.14.4 with a test note.
-They show Live Preview and Reading view side by side.
+![Light reading view](images/light.jpg)
+![Dark reading view](images/dark.jpg)
+![Content blocks](images/content-blocks.jpg)
+![Narrow desktop view](images/narrow.jpg)
 
-### Light mode
+## Install
 
-![Finding Aid in light mode](./images/light.jpg)
+1. Open your vault folder.
+2. Create `.obsidian/themes/Finding Aid/`.
+3. Copy `theme.css` and `manifest.json` into that folder.
+4. Open Obsidian Settings → Appearance.
+5. Select **Finding Aid** in the theme list.
 
-### Dark mode
+## Uninstall
 
-![Finding Aid in dark mode](./images/dark.jpg)
+1. Select the default theme in Settings → Appearance.
+2. Remove `.obsidian/themes/Finding Aid/` from your vault.
 
-## Install the preview
+## Compatibility
 
-1. Download `theme.css` and `manifest.json` from the `1.0.1` release.
-2. Open your vault folder. Show hidden folders if necessary.
-3. Create `.obsidian/themes/Finding Aid/` inside the vault.
-4. Put both files in that folder. Keep their file names unchanged.
-5. Open Obsidian. Go to Settings, then Appearance.
-6. Select `Finding Aid` in the Themes list. Restart Obsidian if it is absent.
+Minimum Obsidian version: 1.4.0.
+The desktop renderer is tested with the G4 native Obsidian capture harness.
+The 420 px screenshots show a narrow desktop window.
+Mobile is not tested. Community-directory installation is not tested.
 
-You can also copy these two files from the repository.
-The manifest declares Obsidian 1.4.0 as the minimum version.
-The captures verify only the desktop version stated above.
+## Customization
 
-## Remove the preview
+Add a CSS snippet in your vault. Enable it in Settings → Appearance.
 
-Select the default theme in Settings, then Appearance.
-You can then remove the `Finding Aid` folder from `.obsidian/themes/`.
-Your note files remain in your vault.
+```css
+body.theme-light, body.theme-dark {
+  --file-line-width: 46rem;
+  --h1-size: 1.8em;
+  --list-indent: 1.6em;
+}
+```
+
+Change `--text-accent` and `--background-modifier-border-focus` together to adjust the accent.
+Check contrast after a color change. Style Settings controls are not included.
 
 ## Known limits
 
-- Desktop captures use Obsidian 1.14.4. Real mobile device use has not been verified.
-- A narrow desktop capture does not prove mobile compatibility.
-- Full keyboard navigation and assistive technology checks remain incomplete.
-- Decorative separators can have low contrast. This theme has no accessibility certification.
-- Font rendering can change with your operating system and installed fonts.
-- Community plugins can change the layout. Their compatibility has not been verified.
+Monospaced catalogue headings use more width than body text. Long identifiers can wrap.
+System fonts can differ between computers.
+Native Obsidian controls determine keyboard reachability.
+Automated contrast checks do not certify screen-reader access.
+Startup console events before the harness attaches are unknown.
+Independent design review is pending.
 
-## Feedback
+## License
 
-Open an issue with your Obsidian version, operating system, selected mode, and steps to reproduce the problem.
-Use a test note. Remove personal information from screenshots before you send them.
-
-## Credits and licence
-
-The original manifest credits Knowledge Systems Factory (U20).
-NoteMods maintains this preview repository. The original CSS and copyright credits are preserved.
-Metadata and licence formatting were corrected for directory review. The MIT terms are unchanged.
-See [LICENSE](./LICENSE) for the MIT terms.
-
-[View the NoteMods catalog](https://notemods.com/themes/).
-
-## Source provenance
-
-This is original CSS written for this project. It does not copy published theme CSS. System fonts are referenced by name only.
-
-## Version 1.0.1
-
-This update corrects repository metadata. The theme CSS is unchanged.
-The score above is historical. These current repository files have not received a new independent review.
-The 95/100 acceptance gate remains unmet.
+MIT. See [LICENSE](LICENSE).
